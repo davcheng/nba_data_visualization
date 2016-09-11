@@ -22,3 +22,11 @@ Add a header to the extracted opendata_projects000 file (note, make sure not to 
 and import it (this will take a long time unless you trim down the file)
 
     $ mongoimport -d donorschoose -c projects --type csv --file ./opendata_projects000 --headerline
+
+Once imported, run app via
+	
+	$ python app.py
+
+View goodness at:
+	
+	localhost:5000/
